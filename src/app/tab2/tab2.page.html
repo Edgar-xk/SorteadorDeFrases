@@ -1,17 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Phrases
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" >
+  <div class="content">
+    <div class="centered-container">
+      <ion-textarea  [autoGrow]="true" [(ngModel)]="frase"></ion-textarea>
+    </div>
+  </div>
+  
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-footer class="footer">
+    <ion-button color="primary" expand="block" (click)="Sortear()">See new phrase</ion-button>
+    <ion-button color="danger" expand="block" (click)="Limpiar()">Clear</ion-button>
+  </ion-footer>
 </ion-content>
