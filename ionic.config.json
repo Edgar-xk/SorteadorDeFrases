@@ -1,0 +1,7 @@
+{
+  "name": "sorteando-oraciones",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
